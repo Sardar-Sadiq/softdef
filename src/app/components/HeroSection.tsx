@@ -6,50 +6,51 @@ import Button from "./UI/Button";
 const HeroSection = () => {
   return (
     <>
-      <div className="absolute top-0 left-0 w-full z-50">
+      <div className="absolute top-0 left-0 w-full ml-10 z-50">
         <Navbar />
       </div>
       <section className="h-[300vh] bg-[url('/HeroBG.png')] text-white bg-no-repeat bg-cover bg-center relative">
-        <main className="flex flex-col lg:flex-row">
+        <main className="flex flex-col pt-50 ml-20 lg:flex-row gap-100">
           <div>
             {/* left first box */}
             <div className="">
-              <div className="flex flex-col">
-                <h1>Earth&#39;s Exhale</h1>
-                <p>
+              <div className="flex flex-col inter ">
+                <h1 className=" text-[clamp(2rem,8vw,118px)] font-semibold">Earth&#39;s Exhale</h1>
+                <p className="text-2xl font-medium w-[48.438rem] h-14 ml-3 opacity-75">
                   &quot;Earth Exhale&quot; symbolizes the purity and vitality of
                   the Earth&#39;s natural environment and its essential role in
                   sustaining life.
                 </p>
               </div>
 
-              <div className="flex flex-col mt-10">
+              <div className="flex  mt-10 gap-5">
                 <Button />
-                <div className="flex">
+                <div className="flex gap-5">
                   <Image
                     src={`/livedemo.png`}
                     alt="livedemo"
                     width={70}
                     height={70}
-                    className="w-17.5 h-17.5"
+                    className="w-17.5 h-17.5 mt-1"
                   />
-                  <a href="#">Live demo</a>
+                    <a href="#" className="indie text-[1.563rem] mt-5">Live demo</a>
                 </div>
               </div>
             </div>
 
             {/* left second box */}
-            <div>
-              <div className="flex ">
+         
+             <div className="flex-col rounded-[2.813rem] px-6 py-9 w-max border-2 border-white/50 bg-white/5 backdrop-blur-md">
+              <div className="flex gap-8">
                 <Image
                   src={`/reviewer0.png`}
                   alt="reviewer pic"
                   width={64}
                   height={64}
-                  className="w-16 h-16"
+                  className="w-16 h-16 soft-card"
                 />
-                <div className="flex flex-col">
-                  <h1>Ronnie Hamill</h1>
+                <div className="flex flex-col mt-3">
+                  <h1 className="text-[1.375rem] inter font-normal">Ronnie Hamill</h1>
                   <Image
                     src={`/stars.png`}
                     alt="rating"
@@ -58,17 +59,19 @@ const HeroSection = () => {
                     className="w-[6.469rem] h-[0.938rem]"
                   />
                 </div>
-                <p>I can&#39;t express how thrilled I am with my new natural plants! They bring such a fresh and vibrant energy to my home.</p>
+                
               </div>
+              <p className="w-[21.313rem] h-[3.938rem] opacity-75 text-[1.063rem] mt-6 mb-5 inter">I can&#39;t express how thrilled I am with my new natural plants! They bring such a fresh and vibrant energy to my home.</p>
             </div>
+           </div>
 
             {/* right box */}
             <div>
-              <Heroplant />
+              <Heroplant  />
               
             </div>
 
-          </div>
+          
         </main>
       </section>
     </>

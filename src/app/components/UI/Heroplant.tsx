@@ -5,7 +5,7 @@ import { ChevronRight } from "lucide-react";
 import Card from "./Card";
 const Heroplant = () => {
   return (
-    <div>
+    <div className="p-10">
       {/* <svg width="512" height="624" viewBox="0 0 512 624" fill="none" xmlns="http://www.w3.org/2000/svg">
         <foreignObject x="-15" y="-15" width="542" height="653.157">
           <div
@@ -35,28 +35,32 @@ const Heroplant = () => {
         </defs>
       </svg> */}
       <Card>
-        <div className="flex flex-col items-center justify-between h-full p-6 text-white">
-          <Image
+        <div className="-mt-50 -ml-14">
+            <Image
             src={`/plant1.png`}
             alt=""
-            width={459}
-            height={459}
-            className="w-full h-auto max-w-[28.688rem] -mt-16"
+            width={600}
+            height={600}
+            className="w-full h-auto max-w-150 drop-shadow-lg"
           />
+          </div>
+        <div className="flex flex-col items-center justify-between h-full p-6 text-white">
+          
 
           
-            <div className="flex flex-col items-start w-full px-4">
+            <div className="w-full px-4">
               <h2 className="text-sm opacity-70">Indoor plant</h2>
-              <div className="flex justify-between items-center w-full">
+              <div className="flex justify-between items-center w-full mt-1">
                 <h1 className="text-2xl font-semibold">Aglaonema plant</h1>
-                <button>
+                
+              </div>
+              <button>
                   <ChevronRight  size={24}/>
                 </button>
-              </div>
               <Button />
             </div>
             
-            <h1 className="text-2xl tracking-[0.2rem]">...</h1>
+            
           
         </div>
       </Card>

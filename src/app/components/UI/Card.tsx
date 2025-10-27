@@ -10,6 +10,7 @@ const Card = ({ children }: { children: React.ReactNode }) => {
           viewBox="0 0 512 624"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
+          className="w-125 h-161"
         >
           <foreignObject x="-15" y="-15" width="542" height="653.157">
             <div

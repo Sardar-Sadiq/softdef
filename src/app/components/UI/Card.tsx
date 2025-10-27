@@ -1,24 +1,32 @@
 import React from "react";
 
-const Card = ({ children }: { children: React.ReactNode }) => {
+type CardProps = {
+  children: React.ReactNode;
+  className?: string;
+};
+
+const Card = ({ children, className }: CardProps) => {
   return (
-    <div>
-      <div className="relative">
+    <div className={`${className ?? ""} overflow-visible`}>
+      <div className="relative overflow-visible">
         <svg
           width="512"
-          height="624"
+          height="644"
           viewBox="0 0 512 624"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="w-125 h-161"
+          className="w-full h-auto max-w-lg mx-auto block "
+          aria-hidden
         >
           <foreignObject x="-15" y="-15" width="542" height="653.157">
             <div
               style={{
                 backdropFilter: "blur(7.5px)",
+                WebkitBackdropFilter: "blur(7.5px)",
                 clipPath: "url(#bgblur_0_82_36_clip_path)",
                 height: "100%",
                 width: "100%",
+                // borderRadius: "1.75rem",
               }}
             />
           </foreignObject>
@@ -28,6 +36,7 @@ const Card = ({ children }: { children: React.ReactNode }) => {
             fill="white"
             fillOpacity="0.05"
             stroke="url(#paint0_linear_82_36)"
+            strokeWidth="1"
           />
           <defs>
             <clipPath
@@ -49,7 +58,10 @@ const Card = ({ children }: { children: React.ReactNode }) => {
             </linearGradient>
           </defs>
         </svg>
-        <div className="absolute inset-0 z-10">{children}</div>
+        {/* content sits above the SVG; allow overflow so images can overlap the top */}
+        <div className="absolute inset-0 z-10 flex items-start justify-center">
+          {children}
+        </div>
       </div>
     </div>
   );

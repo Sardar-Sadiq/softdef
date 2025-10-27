@@ -10,20 +10,20 @@ const HeroSection = () => {
         <Navbar />
       </div>
       <section className="h-[300vh] bg-[url('/HeroBG.png')] text-white bg-no-repeat bg-cover bg-center relative">
-        <main className="flex flex-col pt-40 ml-20 lg:flex-row gap-100">
+        <main className="flex flex-col pt-40 ml-20 lg:flex-row lg:gap-120">
           <div>
             {/* left first box */}
             <div>
               <div className="flex flex-col inter gap-0 ">
-                <h1 className=" text-[clamp(2rem,8vw,118px)] font-semibold">Earth&#39;s Exhale</h1>
-                <p className="text-2xl font-medium w-[48.438rem] h-14 ml-3 opacity-75">
+                <h1 className=" text-[clamp(2rem,8vw,118px)]  font-semibold">Earth&#39;s Exhale</h1>
+                <p className="text-[clamp(1.5rem,2vw+1rem,1.875rem) ml-1 font-medium  opacity-75 max-w-xl">
                   &quot;Earth Exhale&quot; symbolizes the purity and vitality of
-                  the Earth&#39;s natural environment and its essential role in
+                  the Earth&#39;s natural  environment and its essential role in
                   sustaining life.
                 </p>
               </div>
 
-              <div className="flex  mt-10 gap-5">
+              <div className="flex  mt-5 gap-5">
                 <Button />
                 <div className="flex gap-5">
                   <Image
@@ -31,16 +31,16 @@ const HeroSection = () => {
                     alt="livedemo"
                     width={70}
                     height={70}
-                    className="w-17.5 h-17.5 mt-1"
+                    className="w-17.5 h-17.5 -mt-1"
                   />
-                    <a href="#" className="indie text-[1.563rem] mt-5">Live demo</a>
+                    <a href="#" className="indie text-[1.563rem] mt-3">Live demo</a>
                 </div>
               </div>
             </div>
 
             {/* left second box */}
          
-             <div className="flex-col mt-35 rounded-[2.813rem] px-6 py-9 w-max border-2 border-white/28 bg-white/5 backdrop-blur-md">
+             <div className="flex-col lg:mt-35 md:mt-20 mt-10 rounded-[2.813rem] px-6 py-9 w-max border-2 border-white/28 bg-white/5 backdrop-blur-md">
               <div className="flex gap-8">
                 <Image
                   src={`/reviewer0.png`}
@@ -66,7 +66,7 @@ const HeroSection = () => {
            </div>
 
             {/* right box */}
-            <div>
+            <div className="-ml-30 sm:mt-10">
               <Heroplant  />
               
             </div>

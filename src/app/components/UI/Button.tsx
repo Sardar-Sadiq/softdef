@@ -1,9 +1,13 @@
 import React from "react";
 
-const Button = () => {
+interface ButtonProps {
+  className?: string;
+}
+
+const Button = ({ className }: ButtonProps) => {
   return (
     <div>
-      <button className="w-48 h-15 border-white border-2 rounded-xl text-2xl inter font-normal leading-none ml-1 mr-2 my-2 p-2 ">
+      <button className={`w-44 h-14 border border-white rounded-xl text-lg inter font-normal hover:bg-white/10 transition-colors duration-300 ${className || ''}`}>
         <a href="#">Buy Now</a>
       </button>
     </div>

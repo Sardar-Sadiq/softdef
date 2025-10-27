@@ -5,63 +5,34 @@ import { ChevronRight } from "lucide-react";
 import Card from "./Card";
 const Heroplant = () => {
   return (
-    <div className="p-10">
-      {/* <svg width="512" height="624" viewBox="0 0 512 624" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <foreignObject x="-15" y="-15" width="542" height="653.157">
-          <div
-            style={{
-              backdropFilter: 'blur(7.5px)',
-              clipPath: 'url(#bgblur_0_82_36_clip_path)',
-              height: '100%',
-              width: '100%',
-            }}
-          />
-        </foreignObject>
-        <path
-          data-figma-bg-blur-radius="15"
-          d="M0.5 62.2178C0.500045 21.6648 40.3416 -7.51024 79.6914 2.46973C133.868 16.2102 205.805 30.9339 263.007 30.1572C315.825 29.44 381.619 15.6259 432.31 2.63184C471.644 -7.45121 511.5 21.6942 511.5 62.2588V563.157C511.5 596.018 484.861 622.657 452 622.657H60C27.1391 622.657 0.5 596.018 0.5 563.157V62.2178Z"
-          fill="white"
-          fillOpacity="0.05"
-          stroke="url(#paint0_linear_82_36)"
-        />
-        <defs>
-          <clipPath id="bgblur_0_82_36_clip_path" transform="translate(15 15)">
-            <path d="M0.5 62.2178C0.500045 21.6648 40.3416 -7.51024 79.6914 2.46973C133.868 16.2102 205.805 30.9339 263.007 30.1572C315.825 29.44 381.619 15.6259 432.31 2.63184C471.644 -7.45121 511.5 21.6942 511.5 62.2588V563.157C511.5 596.018 484.861 622.657 452 622.657H60C27.1391 622.657 0.5 596.018 0.5 563.157V62.2178Z" />
-          </clipPath>
-          <linearGradient id="paint0_linear_82_36" x1="32.5" y1="25.1572" x2="459.5" y2="609.157" gradientUnits="userSpaceOnUse">
-            <stop stopColor="white" />
-            <stop offset="1" />
-          </linearGradient>
-        </defs>
-      </svg> */}
-      <Card>
-        <div className="-mt-50 -ml-14">
+    <div className="p-2  sm:p-6 md:p-8  lg:p-10">
+      <Card className="w-full max-w-[20rem] sm:max-w-[24rem] md:max-w-md lg:w-lg mx-auto">
+        <div className="flex flex-col items-center px-4 sm:px-6 md:px-8 pt-12 sm:pt-14 md:pt-16 pb-6 sm:pb-8 text-white">
+          <div className="-mt-39   md:-mt-40 lg:-mt-50 flex justify-center">
             <Image
-            src={`/plant1.png`}
-            alt=""
-            width={600}
-            height={600}
-            className="w-full h-auto max-w-150 drop-shadow-lg"
-          />
+              src={`/plant1.png`}
+              alt="Aglaonema plant"
+              width={600}
+              height={600}
+              className="h-auto w-80 sm:w-96 md:w-120 lg:w-150 drop-shadow-2xl transform scale-110 sm:scale-115 md:scale-120 lg:scale-125"
+              priority
+            />
           </div>
-        <div className="flex flex-col items-center justify-between h-full p-6 text-white">
-          
-
-          
-            <div className="w-full px-4">
-              <h2 className="text-sm opacity-70">Indoor plant</h2>
-              <div className="flex justify-between items-center w-full mt-1">
-                <h1 className="text-2xl font-semibold">Aglaonema plant</h1>
-                
-              </div>
-              <button>
-                  <ChevronRight  size={24}/>
-                </button>
+          <div className="w-full mt-4 sm:mt-5 md:mt-6 space-y-1 sm:space-y-2">
+            <h2 className="text-base sm:text-lg md:text-xl lg:text-[1.25rem] opacity-50 font-normal">Indoor plant</h2>
+            <div className="flex justify-between items-center gap-4">
+              <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-[2.5rem] font-medium">Aglaonema plant</h1>
+              <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 opacity-60" />
+            </div>
+            <div className="mt-6 sm:mt-8">
               <Button />
             </div>
-            
-            
-          
+          </div>
+          <div className="flex justify-center space-x-1.5 sm:space-x-2 mt-6 sm:mt-7 md:mt-8">
+            <span className="w-1.5 sm:w-2 h-1.5 sm:h-2 bg-white/50 rounded-full"></span>
+            <span className="w-2 sm:w-2.5 h-2 sm:h-2.5 bg-white rounded-full"></span>
+            <span className="w-1.5 sm:w-2 h-1.5 sm:h-2 bg-white/50 rounded-full"></span>
+          </div>
         </div>
       </Card>
     </div>
@@ -69,3 +40,4 @@ const Heroplant = () => {
 };
 
 export default Heroplant;
+

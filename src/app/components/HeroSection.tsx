@@ -6,15 +6,15 @@ import Button from "./UI/Button";
 const HeroSection = () => {
   return (
     <>
-      <div className="absolute top-0 left-0 w-full ml-10 z-50">
+      <div className="absolute top-0 left-0 w-full z-50">
         <Navbar />
       </div>
       <section className="h-[300vh] bg-[url('/HeroBG.png')] text-white bg-no-repeat bg-cover bg-center relative">
-        <main className="flex flex-col pt-50 ml-20 lg:flex-row gap-100">
+        <main className="flex flex-col pt-40 ml-20 lg:flex-row gap-100">
           <div>
             {/* left first box */}
-            <div className="">
-              <div className="flex flex-col inter ">
+            <div>
+              <div className="flex flex-col inter gap-0 ">
                 <h1 className=" text-[clamp(2rem,8vw,118px)] font-semibold">Earth&#39;s Exhale</h1>
                 <p className="text-2xl font-medium w-[48.438rem] h-14 ml-3 opacity-75">
                   &quot;Earth Exhale&quot; symbolizes the purity and vitality of
@@ -40,7 +40,7 @@ const HeroSection = () => {
 
             {/* left second box */}
          
-             <div className="flex-col rounded-[2.813rem] px-6 py-9 w-max border-2 border-white/50 bg-white/5 backdrop-blur-md">
+             <div className="flex-col mt-35 rounded-[2.813rem] px-6 py-9 w-max border-2 border-white/28 bg-white/5 backdrop-blur-md">
               <div className="flex gap-8">
                 <Image
                   src={`/reviewer0.png`}

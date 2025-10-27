@@ -30,7 +30,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="flex mt-6 w-full items-center justify-between mx-auto px-4 sm:px-8 lg:px-10 py-2 md:py-4  text-white">
+     <div className="flex mt-6 w-full items-center justify-between mx-auto px-20 py-2 md:py-4 text-white">
         {/* logo and name*/}
         <div className="flex shrink-0 items-center z-10 gap-2">
           <Image
@@ -46,7 +46,7 @@ const Navbar = () => {
         </div>
 
         {/* menu list*/}
-        <nav className="hidden lg:flex grow justify-center pt-3 ">
+        <nav className="hidden lg:flex  grow justify-center pt-3 ">
           <div className="flex grow justify-between items-center px-8">
             <ul className="flex items-center gap-10 text-[clamp(1.3rem,2vw,1.5rem)] font-normal indie mx-auto pr-20">
               {menuItems.map((item) => (

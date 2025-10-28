@@ -9,12 +9,12 @@ const HeroSection = () => {
       <div className="absolute top-0 left-0 w-full z-50">
         <Navbar />
       </div>
-      <section className="h-[300vh] bg-[url('/HeroBG.png')] text-white bg-no-repeat bg-cover bg-center relative">
-        <main className="flex flex-col pt-40 ml-20 lg:flex-row lg:gap-120">
+      <section className="h-[300vh] bg-[url('/HeroBG.png')] text-white bg-no-repeat bg-cover bg-center relative ">
+        <main className="flex flex-col items-center pt-40 px-4 sm:px-8 lg:pl-20 lg:pr-0 lg:items-start lg:flex-row lg:gap-120">
           <div>
             {/* left first box */}
-            <div>
-              <div className="flex flex-col inter gap-0 ">
+            <div className="flex items-center flex-col mt-10  lg:items-start">
+              <div className="flex flex-col items-start inter lg:ml-0 ml-30 gap-0 ">
                 <h1 className=" text-[clamp(2rem,8vw,118px)]  font-semibold">Earth&#39;s Exhale</h1>
                 <p className="text-[clamp(1.5rem,2vw+1rem,1.875rem) ml-1 font-medium  opacity-75 max-w-xl">
                   &quot;Earth Exhale&quot; symbolizes the purity and vitality of
@@ -23,7 +23,7 @@ const HeroSection = () => {
                 </p>
               </div>
 
-              <div className="flex  mt-5 gap-5">
+              <div className="flex  items-start lg:ml-0 md:-ml-15  mt-5 gap-5">
                 <Button />
                 <div className="flex gap-5">
                   <Image
@@ -40,14 +40,14 @@ const HeroSection = () => {
 
             {/* left second box */}
          
-             <div className="flex-col lg:mt-35 md:mt-20 mt-10 rounded-[2.813rem] px-6 py-9 w-max border-2 border-white/28 bg-white/5 backdrop-blur-md">
+             <div className="flex-col items-center lg:ml-0 ml-30   lg:mt-35 md:mt-20 mt-10 rounded-[2.813rem] px-6 py-9 w-max border-2 border-white/28 bg-white/5 backdrop-blur-md">
               <div className="flex gap-8">
                 <Image
                   src={`/reviewer0.png`}
                   alt="reviewer pic"
                   width={64}
                   height={64}
-                  className="w-16 h-16 soft-card"
+                  className="w-16 h-16 soft-card-review-shadow"
                 />
                 <div className="flex flex-col mt-3">
                   <h1 className="text-[1.375rem] inter font-normal">Ronnie Hamill</h1>
@@ -66,7 +66,7 @@ const HeroSection = () => {
            </div>
 
             {/* right box */}
-            <div className="-ml-30 sm:mt-10">
+            <div className="lg:-ml-20 lg:mt-10  sm:mt-25">
               <Heroplant  />
               
             </div>

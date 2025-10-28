@@ -38,7 +38,7 @@
 }
 
 
-.soft-card {
+.soft-card-review-shadow {
    filter: 
     drop-shadow(0px 1.95px 6.11px rgba(0, 0, 0, 0.10))
     drop-shadow(0px 5.38px 16.9px rgba(0, 0, 0, 0.15))
@@ -47,9 +47,28 @@
 }
 
 
-.gradient-border {
-  border: 1px solid;
-  border-image-source: linear-gradient(109.4deg, #FFFFFF 0%, #666666 41.42%);
-  border-image-slice: 1;
-  border-image-radius: 2.813rem;
+
+
+
+.drop-shadow-hero-card {
+  filter: 
+    drop-shadow(0px -2.71px 2.21px #0000000C)
+    drop-shadow(0px -6.52px 5.32px #00000012)
+    drop-shadow(0px -12.27px 10.02px #00000016)
+    drop-shadow(0px -21.89px 17.87px #0000001A)
+    drop-shadow(0px -40.94px 33.42px #0000001F)
+    drop-shadow(0px -98px 80px #0000002B);
+}
+
+/* used in the plants image in the hero section */
+.drop-shadow-hero-plant {
+  filter: 
+    drop-shadow(0px 0.54px 1.59px #00000007)
+    drop-shadow(0px 1.22px 3.62px #0000000B)
+    drop-shadow(0px 2.13px 6.31px #0000000D)
+    drop-shadow(0px 3.38px 10.02px #0000000F)
+    drop-shadow(0px 5.22px 15.46px #00000011)
+    drop-shadow(0px 8.14px 24.12px #00000014)
+    drop-shadow(0px 13.51px 40.04px #00000017)
+    drop-shadow(0px 27px 80px #0000001F);
 }

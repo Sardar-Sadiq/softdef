@@ -48,7 +48,7 @@ const Heroplant = () => {
               {/* <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 opacity-60" /> */}
             </div>
             <div className="mt-6 sm:mt-8">
-              <Button />
+              <Button>Buy now</Button>
             </div>
           </div>
           <div className="flex justify-center space-x-1.5 sm:space-x-2 mt-6 sm:mt-7 md:mt-8">
@@ -90,4 +90,3 @@ const Heroplant = () => {
 };
 
 export default Heroplant;
-

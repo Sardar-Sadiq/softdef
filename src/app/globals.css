@@ -4,7 +4,9 @@
 @import "tailwindcss";
 
 
-
+* {
+  -webkit-backdrop-filter: inherit;
+}
 
 
   

@@ -3,13 +3,15 @@ import Navbar from "./UI/Navbar";
 import Image from "next/image";
 import Heroplant from "./UI/Heroplant";
 import Button from "./UI/Button";
+import SectionTitle from "./UI/SectionTitle";
+import Trendyplants from "./Trendyplants";
 const HeroSection = () => {
   return (
     <>
       <div className="absolute top-0 left-0 w-full z-50">
         <Navbar />
       </div>
-      <section className="h-[300vh] bg-[url('/HeroBG.png')] text-white bg-no-repeat bg-cover bg-center relative ">
+      <section className="h-[250vh] bg-[url('/HeroBG.png')] text-white bg-no-repeat bg-cover bg-center relative ">
         <main className="flex flex-col items-center pt-40 px-4 sm:px-8 lg:pl-20 lg:pr-0 lg:items-start lg:flex-row lg:gap-120">
           <div>
             {/* left first box */}
@@ -23,8 +25,8 @@ const HeroSection = () => {
                 </p>
               </div>
 
-              <div className="flex  items-start lg:ml-0 md:-ml-15  mt-5 gap-5">
-                <Button />
+              <div className="flex  items-start    mt-5 gap-5">
+                <Button>Buy Now</Button>
                 <div className="flex gap-5">
                   <Image
                     src={`/livedemo.png`}
@@ -40,7 +42,7 @@ const HeroSection = () => {
 
             {/* left second box */}
          
-             <div className="flex-col items-center lg:ml-0 ml-30   lg:mt-40 md:mt-20 mt-10 rounded-[2.813rem] px-6 py-9 w-max border-2 border-white/28 bg-white/5 backdrop-blur-md">
+             <div className="flex-col items-center lg:ml-0 ml-30   lg:mt-30 md:mt-20 mt-10 rounded-[2.813rem] px-6 py-9 w-max border-2 border-white/28 bg-white/5 backdrop-blur-md">
               <div className="flex gap-8">
                 <Image
                   src={`/reviewer0.png`}
@@ -71,8 +73,15 @@ const HeroSection = () => {
               
             </div>
 
+           
           
         </main>
+         <div>
+          <div className="flex flex-col items-center w-full -mt-5 md:-mt-10 lg:-mt-20">
+              <SectionTitle>Our Trendy Plants</SectionTitle>
+            </div>
+            <Trendyplants/>
+         </div>
       </section>
     </>
   );

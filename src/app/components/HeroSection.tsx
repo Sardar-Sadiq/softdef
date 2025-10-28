@@ -40,7 +40,7 @@ const HeroSection = () => {
 
             {/* left second box */}
          
-             <div className="flex-col items-center lg:ml-0 ml-30   lg:mt-35 md:mt-20 mt-10 rounded-[2.813rem] px-6 py-9 w-max border-2 border-white/28 bg-white/5 backdrop-blur-md">
+             <div className="flex-col items-center lg:ml-0 ml-30   lg:mt-40 md:mt-20 mt-10 rounded-[2.813rem] px-6 py-9 w-max border-2 border-white/28 bg-white/5 backdrop-blur-md">
               <div className="flex gap-8">
                 <Image
                   src={`/reviewer0.png`}

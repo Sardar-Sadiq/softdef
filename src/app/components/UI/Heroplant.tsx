@@ -41,7 +41,7 @@ const Heroplant = () => {
               priority
             />
           </div>
-          <div className="w-full mt-0 sm:mt-0 md:mt-0 space-y-1 sm:space-y-2">
+          <div className="w-full mt-0 sm:mt-5 md:mt-6 space-y-1 sm:space-y-2">
             <h2 className="text-base sm:text-lg md:text-xl lg:text-[1.25rem] opacity-50 font-normal">Indoor plant</h2>
             <div className="flex justify-between items-center gap-4">
               <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-[2.5rem] font-medium">{currentPlant.name}</h1>

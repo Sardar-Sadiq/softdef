@@ -79,7 +79,7 @@ const Navbar = () => {
               </li>
               <li>
                 <Image
-                  src="/bag-icon.png"
+                  src="/bag.png"
                   alt=""
                   width={26}
                   height={26}

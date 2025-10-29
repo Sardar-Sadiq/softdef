@@ -28,29 +28,35 @@ const Trendyplants: React.FC = () => {
   return (
     <>
       <section>
-        <div className="w-[101.188rem] h-[31.25rem] bg-red-500 mx-auto flex justify-center items-center gap-20 ">
-          <div className="-mt-20">
-            <Image src={`/heroplant1.png`} alt="" width={601} height={732} />
+            <div className="w-auto h-131.5 mx-5 md:mx-10 lg:mx-20 px-5 md:px-10 lg:px-20  flex flex-row justify-center items-center gap-25 border-2 bg-white/5 border-white/33 backdrop-blur-xl rounded-[9.438rem] ">
+          {/* image div */}
+          <div className="-mt-44">
+            <Image src={`/heroplant1.png`} alt="" width={600} height={600} 
+              className="w-150 h-164"
+            />
           </div>
-          <div>
+          {/* info div */}
+          <div className="flex flex-col">
             <div className="inter font-semibold">
-              <h1 className="text-[clamp(1.75rem,3vw,2.375rem)  ]">For your Desks Decorations</h1>
-              <p className="text-[clamp(1rem,2.5vw,1.25rem)]">
+              <h1 className=" text-[clamp(1.75rem,3vw,2.375rem)] mb-8.5">For your Desks Decorations</h1>
+              <p className="text-[clamp(1rem,2.5vw,1.25rem)] mb-6">
                 I recently added a beautiful desk decoration plant to my
                 workshop, and it has made such a positive difference!
               </p>
-              <h1 className="text-[clamp(1.75rem,3vw,2.375rem)">Rs.599/-</h1>
+              <h1 className="text-[clamp(1.75rem,3vw,2.375rem)] mb-6">Rs.599/-</h1>
             </div>
 
-            <div className="flex gap-5">
+            <div className="flex gap-8">
               <Button className="font-medium">Explore</Button>
-              <Image
-                src={`/bag-icon.png`}
+              <div className="border border-white p-2.5 rounded-xl hover:bg-white/10 transition-colors duration-300">
+                <Image
+                src={`/bag.png`}
                 alt=""
-                width={34}
-                height={34}
-                className="w-8.5 h-8.5 flex mt-2.5 "
+                width={30}
+                height={30}
+                className="w-8 h-8 p-0.5"
               />
+              </div>
             </div>
           </div>
         </div>

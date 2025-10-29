@@ -79,8 +79,9 @@ const HeroSection = () => {
          <div>
           <div className="flex flex-col items-center w-full -mt-5 md:-mt-10 lg:-mt-20">
               <SectionTitle>Our Trendy Plants</SectionTitle>
+              <Trendyplants/>
             </div>
-            <Trendyplants/>
+            
          </div>
       </section>
     </>

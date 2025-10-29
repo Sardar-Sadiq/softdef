@@ -20,7 +20,7 @@ const SectionTitle = ({ children }: SectionTitleProps) => {
             opacity="0.5"
             d="M2.5 0V43C2.5 54.0457 11.4543 63 22.5 63H64"
             stroke="url(#paint0_linear_67_70)"
-            stroke-width="5"
+            strokeWidth="5"
           />
           <defs>
             <linearGradient
@@ -31,8 +31,8 @@ const SectionTitle = ({ children }: SectionTitleProps) => {
               y2="-6"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#FBD300" />
-              <stop offset="1" stop-color="white" />
+              <stop stopColor="#FBD300" />
+              <stop offset="1" stopColor="white" />
             </linearGradient>
           </defs>
         </svg>
@@ -52,7 +52,7 @@ const SectionTitle = ({ children }: SectionTitleProps) => {
             opacity="0.5"
             d="M61.5 65.5V22.5C61.5 11.4543 52.5457 2.50001 41.5 2.50001L1.09971e-05 2.50001"
             stroke="url(#paint0_linear_67_71)"
-            stroke-width="5"
+            strokeWidth="5"
           />
           <defs>
             <linearGradient
@@ -63,8 +63,8 @@ const SectionTitle = ({ children }: SectionTitleProps) => {
               y2="71.5"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#FBD300" />
-              <stop offset="1" stop-color="white" />
+              <stop stopColor="#FBD300" />
+              <stop offset="1" stopColor="white" />
             </linearGradient>
           </defs>
         </svg>

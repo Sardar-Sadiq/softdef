@@ -129,7 +129,7 @@ const TopSellingSection = () => {
                     alt={plant.name}
                     width={400}
                     height={400}
-                    className="w-90 h-90 object-contain"
+                    className="w-90 h-90 object-contain drop-shadow-top-selling-plants"
                   />
                 </div>
                 <div className="flex flex-col p-6 -mt-5  inter w-full font-normal ">

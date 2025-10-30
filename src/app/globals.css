@@ -77,9 +77,25 @@
 
 
 
+.drop-shadow-top-selling-plants {
+  filter:
+    drop-shadow(0 0.54px 1.59px #00000007)
+    drop-shadow(0 1.22px 3.62px #0000000B)
+    drop-shadow(0 2.13px 6.31px #0000000D)
+    drop-shadow(0 3.38px 10.02px #0000000F)
+    drop-shadow(0 5.22px 15.46px #00000011)
+    drop-shadow(0 8.14px 24.12px #00000014)
+    drop-shadow(0 13.51px 40.04px #00000017)
+    drop-shadow(0 27px 80px #0000001F);
+}
 
-/* 
-backdrop-filter: blur(25px)
 
-box-shadow: 0px 9px 18.4px 0px #00000040;
- */
+.drop-shadow-review{
+  filter:
+    drop-shadow(0 2.77px 2.21px #0000000B)
+    drop-shadow(0 6.65px 5.32px #0000000F)
+    drop-shadow(0 12.52px 10.02px #00000013)
+    drop-shadow(0 22.34px 17.87px #00000017)
+    drop-shadow(0 41.78px 33.42px #0000001B)
+    drop-shadow(0 100px 80px #00000026)
+}

@@ -11,7 +11,7 @@ const HeroSection = () => {
       <div className="absolute top-0 left-0 w-full z-50">
         <Navbar />
       </div>
-      <section className="h-[250vh] bg-[url('/HeroBG.png')] text-white bg-no-repeat bg-cover bg-center relative ">
+      <section className="min-h-[250vh] bg-[url('/HeroBG.png')] text-white bg-no-repeat bg-cover bg-center relative ">
         <main className="flex flex-col items-center pt-40 px-4 sm:px-8 lg:pl-20 lg:pr-0 lg:items-start lg:flex-row lg:gap-120">
           <div>
             {/* left first box */}
@@ -76,13 +76,12 @@ const HeroSection = () => {
            
           
         </main>
-         <div>
+         <div className="w-full px-4 pb-10 sm:px-8 lg:px-20">
           <div className="flex flex-col items-center w-full -mt-5 md:-mt-10 lg:-mt-20">
-              <SectionTitle>Our Trendy Plants</SectionTitle>
-              <Trendyplants/>
-            </div>
-            
-         </div>
+            <SectionTitle>Our Trendy Plants</SectionTitle>
+            <Trendyplants/>
+          </div>
+        </div>
       </section>
     </>
   );

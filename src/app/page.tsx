@@ -9,10 +9,12 @@ export default function Home() {
   return (
     <>
       <HeroSection/>
-      <TopSellingSection/>
+      <div className="bg-[#1B2316]">
+        <TopSellingSection/>
       <Reviews/>
       <O2Section/>
       <Footer/>
+      </div>
     </>
   );
 }

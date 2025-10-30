@@ -10,7 +10,7 @@
 
 
   
-  /* background-color: #1B2316; */
+
   
 
 
@@ -74,3 +74,12 @@
     drop-shadow(0px 13.51px 40.04px #00000017)
     drop-shadow(0px 27px 80px #0000001F);
 }
+
+
+
+
+/* 
+backdrop-filter: blur(25px)
+
+box-shadow: 0px 9px 18.4px 0px #00000040;
+ */

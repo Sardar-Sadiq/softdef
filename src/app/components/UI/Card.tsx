@@ -7,7 +7,7 @@ type CardProps = {
 
 const Card = ({ children, className }: CardProps) => {
   return (
-    <div className={`${className ?? ""} overflow-visible`}>
+    <div className={`${className ?? ""} overflow-visible `}>
       <div className="relative overflow-visible">
         <svg
           width="512"

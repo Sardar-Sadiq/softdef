@@ -2,8 +2,7 @@ import React from "react";
 import Image from "next/image";
 import SectionTitle from "./UI/SectionTitle";
 
-
-interface Review { 
+interface Review {
   id: number;
   name: string;
   text: string;
@@ -13,124 +12,107 @@ interface Review {
 const reviewersData: Review[] = [
   {
     id: 1,
-    name:"Shelly Russel",
-    text:"Just got my hands on some absolutely awesome plants, and I couldn't be happier!",
-    image:"/review-1.png",
-  }
-]
-
+    name: "Shelly Russel",
+    text: "Just got my hands on some absolutely awesome plants, and I couldn't be happier!",
+    image: "/review-1.png",
+  },
+  {
+    id: 2,
+    name: "Lula Rolfson",
+    text: "Each one has its own unique charm and personality, and they've already started brigntening up my space. The vibrant colors and fresh greenery make such a huge difference in my home.",
+    image: "/review-2.png",
+  },
+  {
+    id: 3,
+    name: "Carol Huels",
+    text: "It's like bringing a little piece of nature indoors. Definitely worth the investment my plant collection has never looked better!",
+    image: "/review-3.png",
+  },
+];
 
 const Reviews = () => {
   return (
     <>
-      <section className="h-180 px-4 sm:px-8 lg:px-20 py-0 text-white ">
+      <section className="min-h-screen px-4 sm:px-8 lg:px-20 py-20 text-white ">
         <div className="flex  justify-center">
-          <SectionTitle >Customer Review</SectionTitle>
+          <SectionTitle>Customer Review</SectionTitle>
         </div>
 
-        <div className="relative ">
-          <svg
-            width="500"
-            height="447"
-            viewBox="0 0 549 507"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <foreignObject x="-6.6" y="-15.6001" width="562" height="522.555">
-              <div 
-               
-                style={{
-                  backdropFilter: "blur(12.5px)",
-                  clipPath:"url(#bgblur_0_11_150_clip_path)",
-                  height:"100%",
-                  width:"100%",
-                }}
-              
-              />
-            </foreignObject>
-            <g filter="url(#filter0_d_11_150)" data-figma-bg-blur-radius="25">
-              <path
-                d="M18.4 87.7244C18.4 41.0784 59.5363 5.02568 105.934 9.82989C157.814 15.2018 223.208 20.6714 274.4 20.6714C325.592 20.6714 390.986 15.2018 442.866 9.82989C489.264 5.02568 530.4 41.0784 530.4 87.7244V402.555C530.4 445.081 495.926 479.555 453.4 479.555H95.4C52.8741 479.555 18.4 445.081 18.4 402.555V87.7244Z"
-                fill="white"
-                fill-opacity="0.05"
-                shape-rendering="crispEdges"
-              />
-              <path
-                d="M442.968 10.8242C488.794 6.07923 529.4 41.6895 529.4 87.7246V402.555C529.4 444.528 495.374 478.555 453.4 478.555H95.4C53.4264 478.555 19.4 444.528 19.4 402.555V87.7246C19.4 41.6895 60.0056 6.07923 105.832 10.8242C157.718 16.1967 223.154 21.6719 274.4 21.6719C325.646 21.6719 391.082 16.1967 442.968 10.8242Z"
-                stroke="url(#paint0_linear_11_150)"
-                stroke-width="2"
-                shape-rendering="crispEdges"
-              />
-            </g>
-            <defs>
-              <filter
-                id="filter0_d_11_150"
-                x="-6.6"
-                y="-15.6001"
-                width="562"
-                height="522.555"
-                filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
-              >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                <feColorMatrix
-                  in="SourceAlpha"
-                  type="matrix"
-                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                  result="hardAlpha"
-                />
-                <feOffset dy="9" />
-                <feGaussianBlur stdDeviation="9.2" />
-                <feComposite in2="hardAlpha" operator="out" />
-                <feColorMatrix
-                  type="matrix"
-                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
-                />
-                <feBlend
-                  mode="normal"
-                  in2="BackgroundImageFix"
-                  result="effect1_dropShadow_11_150"
-                />
-                <feBlend
-                  mode="normal"
-                  in="SourceGraphic"
-                  in2="effect1_dropShadow_11_150"
-                  result="shape"
-                />
-              </filter>
-              <clipPath
-                id="bgblur_0_11_150_clip_path"
-                transform="translate(6.6 15.6001)"
-              >
-                <path d="M18.4 87.7244C18.4 41.0784 59.5363 5.02568 105.934 9.82989C157.814 15.2018 223.208 20.6714 274.4 20.6714C325.592 20.6714 390.986 15.2018 442.866 9.82989C489.264 5.02568 530.4 41.0784 530.4 87.7244V402.555C530.4 445.081 495.926 479.555 453.4 479.555H95.4C52.8741 479.555 18.4 445.081 18.4 402.555V87.7244Z" />
-              </clipPath>
-              <linearGradient
-                id="paint0_linear_11_150"
-                x1="30.4"
-                y1="44.6479"
-                x2="325.683"
-                y2="547.273"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stop-color="white" stop-opacity="0.2" />
-                <stop offset="0.52" stop-opacity="0" />
-                <stop offset="1" stop-color="white" stop-opacity="0.2" />
-              </linearGradient>
-            </defs>
-          </svg>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-20 gap-x-8 mt-20 inter">
+          {reviewersData.map((review, index) => {
+            const isLastItem = index === reviewersData.length - 1;
+            const wrapperClasses = isLastItem
+              ? "md:col-span-2 lg:col-span-1 flex justify-center"
+              : "";
 
-          <div className="absolute inset-0 z-10">
-                  <div>
-                    <div className="flex  gap-5">
-                      <Image src={`/review-1.png`} alt='review-pic' width={88} height={88} />
+            return (
+              <div key={review.id} className={wrapperClasses}>
+                <div className="flex items-center justify-center">
+                  <div className="relative w-100 h-112 ">
+                  <svg
+                    width="400"
+                    height="384"
+                    viewBox="0 0 549 507"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M424.568 1.42432C470.394 -3.32067 511 32.2896 511 78.3247V393.155C511 435.128 476.974 469.155 435 469.155H77C35.0264 469.155 1 435.128 1 393.155V78.3247C1 32.2896 41.6056 -3.32067 87.4316 1.42432C139.318 6.7968 204.754 12.272 256 12.272C307.246 12.272 372.682 6.7968 424.568 1.42432Z"
+                      fill="white"
+                      fill-opacity="0.05"
+                      stroke="url(#paint0_linear_139_2)"
+                      stroke-width="2"
+                    />
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear_139_2"
+                        x1="12"
+                        y1="35.248"
+                        x2="307.283"
+                        y2="537.873"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="white" stop-opacity="0.2" />
+                        <stop offset="0.52" stop-opacity="0" />
+                        <stop
+                          offset="1"
+                          stop-color="white"
+                          stop-opacity="0.2"
+                        />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+
+                  {/* this is the card content */}
+                  <div className="absolute inset-0 z-10 p-10 flex flex-col items-start">
+                    <div className="flex felx-row gap-5 items-center">
+                      <Image
+                        src={review.image}
+                        alt={review.name}
+                        width={88}
+                        height={88}
+                        className="rounded-full"
+                      />
+
                       <div className="flex flex-col">
-                        <h1>Shelly Russel</h1>
-                        <Image src={`/stars.png`} alt='' width={131.1} height={19} />
+                        <h1 className="text-xl font-semibold">{review.name}</h1>
+                        <Image
+                          src={`/stars.png`}
+                          alt="Rating out of 5"
+                          width={131.1}
+                          height={19}
+                          className="mt-1"
+                        />
                       </div>
                     </div>
-                   <p className="">Just got my hands on some absolutely awesome plants, and I couldn&apos;t</p>
+
+                    <p className="mt-6 text-lg opacity-80">{review.text}</p>
                   </div>
-          </div>
+                </div>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </section>
     </>

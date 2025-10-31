@@ -114,3 +114,12 @@
     drop-shadow(0 100px 80px #00000026)
 }
 
+.drop-shadow-o2-plant {
+  filter:
+    drop-shadow(0 -2.71px 2.21px #0000000C)
+    drop-shadow(0 -6.52px 5.32px #00000012)
+    drop-shadow(0 -12.27px 10.02px #00000016)
+    drop-shadow(0 -21.89px 17.87px #0000001A)
+    drop-shadow(0 -40.94px 33.42px #0000001F)
+    drop-shadow(0 -98px 80px #0000002B)
+}

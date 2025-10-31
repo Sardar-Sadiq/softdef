@@ -38,7 +38,7 @@ const Reviews = () => {
           <SectionTitle>Customer Review</SectionTitle>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-20 gap-x-8 mt-20 inter">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-20  mt-20 inter">
           {reviewersData.map((review, index) => {
             const isLastItem = index === reviewersData.length - 1;
             const wrapperClasses = isLastItem

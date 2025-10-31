@@ -19,8 +19,8 @@ const O2SectionTitle = ({ children }: SectionTitleProps) => {
           <path
             d="M2.5 2.5L2.5 48.5C2.5 61.2026 12.7975 71.5 25.5 71.5H71"
             stroke="url(#paint0_linear_11_186)"
-            stroke-width="5"
-            stroke-linecap="round"
+            strokeWidth="5"
+            strokeLinecap="round"
           />
           <defs>
             <linearGradient
@@ -31,13 +31,13 @@ const O2SectionTitle = ({ children }: SectionTitleProps) => {
               y2="71.5"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#55B000" />
+              <stop stopColor="#55B000" />
               <stop
                 offset="0.500917"
-                stop-color="white"
-                stop-opacity="0.156606"
+                stopColor="white"
+                stopOpacity="0.156606"
               />
-              <stop offset="1" stop-color="#50790B" />
+              <stop offset="1" stopColor="#50790B" />
             </linearGradient>
           </defs>
         </svg>
@@ -57,8 +57,8 @@ const O2SectionTitle = ({ children }: SectionTitleProps) => {
           <path
             d="M71 71.5L71 25.5C71 12.7974 60.7025 2.5 48 2.5L2.49999 2.50001"
             stroke="url(#paint0_linear_11_185)"
-            stroke-width="5"
-            stroke-linecap="round"
+            strokeWidth="5"
+            strokeLinecap="round"
           />
           <defs>
             <linearGradient
@@ -69,13 +69,13 @@ const O2SectionTitle = ({ children }: SectionTitleProps) => {
               y2="2.5"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#55B000" />
+              <stop stopColor="#55B000" />
               <stop
                 offset="0.500917"
-                stop-color="white"
-                stop-opacity="0.156606"
+                stopColor="white"
+                stopOpacity="0.156606"
               />
-              <stop offset="1" stop-color="#50790B" />
+              <stop offset="1" stopColor="#50790B" />
             </linearGradient>
           </defs>
         </svg>

@@ -57,7 +57,7 @@ const topSellingPlants: Plant[] = [
 const TopSellingSection = () => {
   return (
     <>
-      <section className="min-h-screen px-4 sm:px-8 lg:px-20 py-0 text-white">
+      <section className="min-h-screen px-4 sm:px-8 lg:px-20 py-0 pt-20 text-white">
         <div className="flex justify-center">
           <SectionTitle>Our Top Selling Plants</SectionTitle>
         </div>

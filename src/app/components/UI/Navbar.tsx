@@ -157,7 +157,7 @@ const Navbar = () => {
                   className="cursor-pointer"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  <Image src="/bag-icon.png" alt="" width={26} height={26} />
+                  <Image src="/bag.png" alt="" width={26} height={26} />
                 </button>
               </li>
             </ul>

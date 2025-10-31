@@ -37,7 +37,7 @@ const SectionTitle = ({ children }: SectionTitleProps) => {
           </defs>
         </svg>
       </div>
-       <h2 className='text-4xl md:text-5xl  text-white px-4 py-2 z-10 inter font-semibold'
+       <h2 className='text-4xl md:text-5xl  text-white px-4 py-2 z-10 inter font-semibold drop-shadow-section-title'
        >{children}</h2>
       {/**right side vector */}
       <div className="absolute top-0 right-0">

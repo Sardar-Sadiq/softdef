@@ -48,7 +48,7 @@ const Reviews = () => {
             return (
               <div key={review.id} className={wrapperClasses}>
                 <div className="flex items-center justify-center">
-                  <div className="relative w-100 h-112 ">
+                  <div className="relative w-100 h-112 scale-100">
                   <svg
                     width="400"
                     height="384"
@@ -59,9 +59,9 @@ const Reviews = () => {
                     <path
                       d="M424.568 1.42432C470.394 -3.32067 511 32.2896 511 78.3247V393.155C511 435.128 476.974 469.155 435 469.155H77C35.0264 469.155 1 435.128 1 393.155V78.3247C1 32.2896 41.6056 -3.32067 87.4316 1.42432C139.318 6.7968 204.754 12.272 256 12.272C307.246 12.272 372.682 6.7968 424.568 1.42432Z"
                       fill="white"
-                      fill-opacity="0.05"
+                      fillOpacity="0.05"
                       stroke="url(#paint0_linear_139_2)"
-                      stroke-width="2"
+                      strokeWidth="2"
                     />
                     <defs>
                       <linearGradient
@@ -72,12 +72,12 @@ const Reviews = () => {
                         y2="537.873"
                         gradientUnits="userSpaceOnUse"
                       >
-                        <stop stop-color="white" stop-opacity="0.2" />
-                        <stop offset="0.52" stop-opacity="0" />
+                        <stop stopColor="white" stopOpacity="0.2" />
+                        <stop offset="0.52" stopOpacity="0" />
                         <stop
                           offset="1"
-                          stop-color="white"
-                          stop-opacity="0.2"
+                          stopColor="white"
+                          stopOpacity="0.2"
                         />
                       </linearGradient>
                     </defs>

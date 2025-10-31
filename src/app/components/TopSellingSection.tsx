@@ -63,7 +63,7 @@ const TopSellingSection = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-35 mt-22 place-items-center pb-10">
           {topSellingPlants.map((plant) => (
-            <div key={plant.id} className="relative w-100 h-112.5">
+            <div key={plant.id} className="relative w-100 h-112.5 scale-100">
               <svg
                 width="400"
                 height="450"

@@ -39,7 +39,7 @@ const O2Section = () => {
   return (
     <>
       <section className="min-h-screen px-4 sm:px-8 lg:px-20   text-white ">
-        <div className="flex justify-center -mt-10 mb-50">
+        <div className="flex justify-center -mt-10 mb-30">
           <O2SectionTitle>Our Best o2</O2SectionTitle>
         </div>
         <div>
@@ -54,15 +54,15 @@ const O2Section = () => {
               />
             </div>
             <div className="w-full lg:w-1/2 flex flex-col justify-center  lg:mt-0 p-10 lg:pr-12">
-              <h3 className="text-xl lg:text-5xl font-semibold">
+              <h3 className="text-xl lg:text-5xl font-semibold text-white/75">
                 We Have Small And Best O2 Plants Collection’s
               </h3>
-              <p className="text-lg lg:text-[1.75rem] opacity-80 mt-12">
+              <p className="text-lg lg:text-[1.75rem]  text-white/75 mt-12">
                 Oxygen-producing plants, often referred to as &quot;O2
                 plants,&quot; are those that release oxygen into the atmosphere
                 through the process of photosynthesis.
               </p>
-              <p className="text-lg lg:text-[1.75rem] opacity-80 mt-12">
+              <p className="text-lg lg:text-[1.75rem]  text-white/75 mt-12">
                 Many plants can help filter out pollutants and toxins from the
                 air, such as formaldehyde, benzene, and trichloroethylene. This
                 makes the air cleaner and healthier to breathe.

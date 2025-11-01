@@ -37,13 +37,13 @@ const Footer = () => {
 
 
              {/* col-3 */}  
-            <div className='flex flex-col items-center mx-auto lg:mx-0 lg:items-start w-full max-w-sm lg:max-w-xs'> 
+            <div className='flex flex-col items-center mx-auto  lg:mx-0 lg:items-start lg:w-1/3 sm:w-2/3 w-full max-w-sm lg:max-w-lg'> 
               <h1 className='font-extrabold text-2xl mb-5'>For Every Update.</h1>
-              <div className='flex flex-row w-full'>
+              <div className='flex flex-row w-full bg-transparent border border-white/50 rounded-md p-1 items-center'>
                 <input 
                 type="email"
                 placeholder='Enter Email'
-                className='bg-transparent border border-white/50 border-r-0 rounded-l-md py-3 px-4 w-full focus:outline-none fous:border-white'
+                className='bg-transparent py-2 px-3 w-full focus:outline-none placeholder-white/70'
                 />
                 <button className='bg-white text-black font-bold py-3 px-6 rounded-r-md hover:bg-white/80 transition-colors'>
                   SUBSCRIBE
@@ -57,7 +57,7 @@ const Footer = () => {
                     <h1 className='cursor-pointer hover:opacity-80'>TW</h1>
                     <h1 className='cursor-pointer hover:opacity-80'>LI</h1>
               </div>
-          <p className='text-base opacity-70'> &copy; FloraVision all right reserve</p>
+          <p className='text-base  lg:mr-75'> &copy; FloraVision all right reserve</p>
         </div>
     </section>
    </>

@@ -34,7 +34,7 @@ const Trendyplants: React.FC = () => {
                   return (
                     <div
                       key={plant.id}
-                      className={`flex flex-col items-center bg-white/5 border border-white/33 backdrop-blur-xl rounded-[2.5rem] lg:rounded-[9.438rem] p-8 pt-0 
+                      className={`flex flex-col items-center bg-white/5 border border-white/33 backdrop-blur-sm rounded-[2.5rem] lg:rounded-[9.438rem] p-8 pt-0 
                       scale-100
                       lg:p-0 lg:h-131.5 lg:flex-row lg:justify-between ${isEven ? "lg:flex-row" : "lg:flex-row-reverse"}  
                         `}

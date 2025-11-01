@@ -43,7 +43,7 @@ const O2Section = () => {
           <O2SectionTitle>Our Best o2</O2SectionTitle>
         </div>
         <div>
-          <div className="flex flex-col lg:flex-row bg-white/5 border border-white/33 backdrop-blur-xl rounded-[100px] p-8 lg:p-2 scale-100 w-full  lg:max-w-none mx-auto pt-20 lg:pt-8 mb-25">
+          <div className="flex flex-col lg:flex-row bg-white/5 border border-white/33 backdrop-blur-sm rounded-[100px] p-8 lg:p-2 scale-100 w-full  lg:max-w-none mx-auto pt-20 lg:pt-8 mb-25">
             <div className="relative w-full lg:w-1/2 flex justify-center items-center -mt-40  lg:-ml-8  md:h-100 md:mb-30 lg:h-175 ">
               <Image
                 src={plantImages[currentSlide]}

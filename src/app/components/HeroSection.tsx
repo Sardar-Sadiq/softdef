@@ -45,7 +45,7 @@ const HeroSection = () => {
             {/* left second box */}
          
              <div className="flex justify-center lg:justify-start">
-              <div className=" lg:items-start lg:ml-0  lg:mt-30 md:mt-20 mt-10 rounded-[2.813rem] px-6 py-9 w-max border-2 border-white/28 bg-white/5 backdrop-blur-md">
+              <div className=" lg:items-start lg:ml-0  lg:mt-30 md:mt-20 mt-10 rounded-[2.813rem] px-6 py-9 w-max border-2 border-white/28 bg-white/5 backdrop-blur-sm">
               <div className="flex gap-8">
                 <Image
                   src={`/reviewer0.png`}

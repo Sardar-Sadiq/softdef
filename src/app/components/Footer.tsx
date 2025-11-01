@@ -28,10 +28,10 @@ const Footer = () => {
             <div className='flex flex-col items-center lg:-ml-50 lg:items-start' >
               <h1 className='font-extrabold text-2xl mb-5'>Quick Link&#39;s</h1>
               <ul className='font-medium text-lg flex flex-col gap-3 opacity-80 text-center lg:text-left'>
-                <li className='cursor-pointer hover:underline'>Home</li>
-                <li className='cursor-pointer hover:underline'>Type&#39;s of plant&#39;s</li>
-                <li className='cursor-pointer hover:underline'>Contact</li>
-                <li className='cursor-pointer hover:underline'>Privacy</li>
+                <li className='cursor-pointer underline hover:no-underline'>Home</li>
+                <li className='cursor-pointer underline hover:no-underline'>Type&#39;s of plant&#39;s</li>
+                <li className='cursor-pointer underline hover:no-underline'>Contact</li>
+                <li className='cursor-pointer underline hover:no-underline'>Privacy</li>
               </ul>
             </div>
 

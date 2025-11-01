@@ -14,7 +14,21 @@ const plantImages = [
 
 const O2Section = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [leftClicked, setLeftClicked] = useState(false);
+  const [rightClicked, setRightClicked] = useState(false);
 
+  const leftArrow = () => {
+    goToPrev();
+    setLeftClicked(true);
+    setRightClicked(false);
+  }
+
+  const rightArrow = () => {
+    goToNext();
+    setLeftClicked(false);
+    setRightClicked(true);
+  }
+  
   const goToNext = () => {
     setCurrentSlide((prev) => (prev === plantImages.length - 1 ? 0 : prev + 1));
   };
@@ -30,13 +44,13 @@ const O2Section = () => {
         </div>
         <div>
           <div className="flex flex-col lg:flex-row bg-white/5 border border-white/33 backdrop-blur-xl rounded-[100px] p-8 lg:p-2 scale-100 w-full  lg:max-w-none mx-auto pt-20 lg:pt-8 mb-25">
-            <div className="relative w-full lg:w-1/2 flex justify-center items-center -mt-40 lg:-mt-40 lg:-ml-8">
+            <div className="relative w-full lg:w-1/2 flex justify-center items-center -mt-40  lg:-ml-8 h-87.5 lg:h-175">
               <Image
                 src={plantImages[currentSlide]}
                 alt="plant images"
                 width={700}
                 height={700}
-                className=" mx-auto mb-0 object-contain drop-shadow-o2-plant"
+                className=" mx-auto mb-10 pb-5 object-contain drop-shadow-o2-plant"
               />
             </div>
             <div className="w-full lg:w-1/2 flex flex-col justify-center  lg:mt-0 p-10 lg:pr-12">
@@ -58,9 +72,9 @@ const O2Section = () => {
 
               <div className="flex items-center gap-0">
                 <button
-                  onClick={goToPrev}
+                  onClick={leftArrow}
                   aria-label="previous image"
-                  className="p-2 rounded-full hover:bg-white/10 transition-colors"
+                  className={`p-2 rounded-full hover:bg-white/10 transition-colors ${ leftClicked ? "opacity-50" : "opacity-100"}`}
                 >
                   <ChevronLeft size={24} />
                 </button>
@@ -70,8 +84,8 @@ const O2Section = () => {
                 </span>
 
                 <button
-                  onClick={goToNext}
-                  className="p-2 rounded-full hover:bg-white/20"
+                  onClick={rightArrow}
+                  className={`p-2 rounded-full hover:bg-white/10 transition-colors ${ rightClicked ? "opacity-50 scale-0.5" : "opacity-100"}`}
                 >
                   <ChevronRight size={24} />
                 </button>

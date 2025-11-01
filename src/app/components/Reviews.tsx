@@ -101,7 +101,7 @@ const Reviews = () => {
                           alt="Rating out of 5"
                           width={131.1}
                           height={19}
-                          className="mt-1"
+                          className="mt-1 w-auto h-auto"
                         />
                       </div>
                     </div>

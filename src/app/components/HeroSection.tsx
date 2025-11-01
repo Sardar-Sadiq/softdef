@@ -61,7 +61,7 @@ const HeroSection = () => {
                     alt="rating"
                     width={103.5}
                     height={15}
-                    className="w-[6.469rem] h-[0.938rem]"
+                    className="w-auto h-auto"
                   />
                 </div>
                 

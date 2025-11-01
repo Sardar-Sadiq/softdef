@@ -43,6 +43,7 @@ const Trendyplants: React.FC = () => {
                       <Image
                        src={plant.image} 
                        alt={"plant image"} 
+                       loading="eager"
                        width={601} 
                        height={732}
                        className="w-[20rem] h-auto lg:w-150 lg:h-180 object-contain shrink-0 lg:mb-40 drop-shadow-hero-plant"

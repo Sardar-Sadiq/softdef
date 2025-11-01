@@ -19,7 +19,7 @@ const Footer = () => {
                 className='w-21 logo-shadow ' />
                   <h1 className='font-black text-3xl mt-4 opacity-75 '>FloraVision.</h1>
               </div>
-              <p className='font-medium  text-lg opacity-80 lg:w-lg '>&#34;From lush indoor greens to vibrant outdoor blooms, our plants are crafted to thrive and elevate your living environment.&#34;</p>
+              <p className='font-medium  text-lg lg:w-lg '>&#34;From lush indoor greens to vibrant outdoor blooms, our plants are crafted to thrive and elevate your living environment.&#34;</p>
 
               
             </div>

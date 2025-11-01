@@ -1,6 +1,33 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+
 ## Getting Started
+
+### Installation
+
+Clone the Repository
+```bash
+git clone [https://github.com/Sardar-Sadiq/softdef.git]
+```
+
+Navvigate to the project directory
+``` bash
+cd softdef
+```
+
+
+
+Install the dependencies:
+
+```bash
+npm install 
+```
+or
+```bash 
+npm install --legacy-peer-deps
+```
+
+### Development
 
 First, run the development server:
 
@@ -13,6 +40,17 @@ pnpm dev
 # or
 bun dev
 ```
+
+
+Built With
+Next.js
+React
+Typescript
+Tailwind CSS
+React Lenis
+Lucide React
+
+
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 

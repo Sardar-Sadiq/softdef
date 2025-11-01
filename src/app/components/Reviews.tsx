@@ -33,7 +33,7 @@ const reviewersData: Review[] = [
 const Reviews = () => {
   return (
     <>
-      <section className="min-h-screen px-4 sm:px-8 lg:px-20 py-20 text-white ">
+      <section className="min-h-screen px-4 sm:px-8  -mb-25 lg:px-20 py-20 text-white ">
         <div className="flex  justify-center">
           <SectionTitle>Customer Review</SectionTitle>
         </div>

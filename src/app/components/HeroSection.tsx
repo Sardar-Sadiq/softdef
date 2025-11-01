@@ -11,7 +11,7 @@ const HeroSection = () => {
       <div className="absolute top-0 left-0 w-full z-50">
         <Navbar />
       </div>
-      <section className="min-h-[250vh] bg-[url('/HeroBG.png')] text-white bg-no-repeat bg-cover bg-center relative scale-100">
+      <section className="min-h-[250vh] bg-[url('/HeroBG.webp')] text-white bg-no-repeat bg-cover bg-center relative scale-100">
 
         <main className="flex flex-col items-center pt-40 px-4 sm:px-8 lg:pl-20 lg:pr-0 lg:items-start lg:flex-row lg:gap-120">
           <div>
